@@ -1,7 +1,7 @@
 const { getNetworksForEnv } = require("@layerzerolabs/lz-sdk")
 const fs = require("fs")
 
-const environmentArg = process.argv[2]
+const environmentArg = process.argv[3]
 const contractCsvArg = process.argv[3]
 
 async function getAddresses(environment, contractCsv) {
