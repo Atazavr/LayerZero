@@ -6,7 +6,7 @@ const contractCsvArg = process.argv[3]
 
 async function getAddresses(environment, contractCsv) {
     let contracts = contractCsv.split(",")
-    const promises = []
+    const promises = [1]
     for (const contract of contracts) {
         promises.push("\n" + contract)
         const networks = getNetworksForEnv(environment)
